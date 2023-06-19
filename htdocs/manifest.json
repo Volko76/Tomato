@@ -1,0 +1,33 @@
+{
+  "background_color": "#ffffff",
+  "description": "**Utilisateurs :\n- Recherchez des bons plans et réductions autours de vous afin d'économiser un maximum !\n\n**Commercants :\n- Postez en illimité vos propres réductions afins de vous mettre en avant pour 10€ par mois !",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "Tomato",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Tomato",
+  "start_url": "/",
+  "theme_color": "#cf131c",
+  "categories": [
+    "business",
+    "shopping"
+  ],
+  "icons": [
+    {
+      "src": "../assets/images/favicon.svg"
+    }
+  ],
+  "lang": "fr",
+  "prefer_related_applications": false,
+  "related_applications": [
+    {
+      "platform": "play",
+      "url": "https://play.google.com/store/apps/details?id=com.groupon&amp;hl=en&amp;gl=US&amp;pli=1",
+      "id": "com.groupon"
+    }
+  ],
+  "edge_side_panel": {
+    "preferred_width": 10
+  }
+}

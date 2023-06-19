@@ -1,0 +1,57 @@
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8M77ZFQ6BF"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8M77ZFQ6BF');
+</script>
+
+<!doctype html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="../assets/images/favicon.svg">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styleHome.css">
+    <title>Tomato</title>
+  <script>navigator.serviceWorker.register("HTML/service-worker.js")</script> 
+  <link rel="manifest" href="c:\Users\PC\Downloads\manifest.json" />  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <nav id="top-nav">
+        <div id="top-nav-header-container-i">
+            <a href="/">
+                <div id="top-nav-header-container">
+                    <div id="top-nav-logo-container">
+                        <img id="top-nav-logo" src="./assets/images/logo.svg">
+                    </div>
+                </div>
+            </a>
+        </div> 
+    </nav>
+
+    <div id="main-container">
+      <div id="page-container">
+        <div id="buttons-container">
+          <div class="button" id="annonces-viewer-button" onclick="goToReductions()">
+            Voir toutes les offres
+          </div>
+          <div class="button" id="stores-button" onclick="goToProfile()">
+            Je suis commerçant
+          </div>
+        </div>
+
+      </div>
+    </div>    
+  </body>
+  <script>
+    function goToReductions(){
+      window.location.href = './reductions/';
+    }
+
+    function goToProfile(){
+      window.location.href = './profile/';
+    }
+  </script>
+</html>

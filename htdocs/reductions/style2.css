@@ -1,0 +1,338 @@
+@media all and (min-width: 1024px){
+  #top-nav{
+    display:block;
+  }
+  #image-container{
+    width:850px;
+    margin: 0 auto;
+  }
+}
+
+@media all and (min-width: 0px) and (max-width: 1024px) {
+  #top-nav{
+    display:none;
+  }
+  #image-container{
+    width:100%;
+  }
+}
+
+#annonce-title{
+  display:inline;
+  font-size: 20px;
+  font-weight: 800;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+#get-back-button{
+    width: 25px;
+    height:25px;
+    padding:5px;
+    border-radius:18px;
+    cursor:pointer;
+    transition:0.1s;
+}
+#get-back-button:hover{
+  background-color:#e2e2e2;
+}
+
+#image-container{
+  height: fit-content;
+  max-height: 150px;
+  overflow:hidden;
+}
+
+#image{
+  width:100%;
+}
+#header-container{
+  align-items: center;
+  display:flex;
+  gap:20px;
+}
+
+p{
+  overflow-x: hidden;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: initial;
+ }
+ 
+ 
+ @media all and (min-width: 1024px){
+
+  .reduction-item-image{
+    height:150px;
+  }
+
+  .reduction-item{
+    height:150px;
+    
+  }
+  #top-nav-logo{
+    height:100px;
+    width:100px;
+  }
+  #top-nav-logo-label{
+    padding-top:10px;
+    font-size:50px;    
+  }
+
+  #top-nav-header-container{
+    display:flex;
+    height:100px;
+  }
+
+  #top-nav{
+    height: 94px;
+  }
+
+
+  .reduction-item-title{
+    font-size:24px;
+    height:40px;
+  }
+  .reduction-item-description{
+    font-size:16px;
+    height:44px;
+  }
+  #reductions-container{
+      padding-bottom:50px;
+      margin: 0 auto;
+      width:850px;
+  }
+
+  #filters-container{
+      margin-left:calc(50vw - 425px);
+      margin-right:calc(50vw - 425px);
+  }
+  .reduction-item-infos{
+      margin-left:200px;
+  }
+  .reduction-item-image{
+      width:212px;
+  }
+
+  .reduction-item-discount-container{
+    height:28px;
+  }
+
+  .reduction-item-infos{
+    padding-left:30px;
+    padding-right:30px;
+  }
+  #background{
+    width:850px;
+    margin:auto;
+  }
+}
+@media all and (min-width: 0px) and (max-width: 1024px) {
+
+  #background{
+    width:100%;
+  }
+
+  #main-container{
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .reduction-item-image{
+    height:130px;
+  }
+
+  .reduction-item{
+    height:130px;
+  }
+
+  #top-nav{
+    height: 74px;
+  }
+
+  #top-nav-logo{
+    height:80px;
+    width:80px;
+  }
+
+  #top-nav-header-container{
+    display:flex;
+    height:80px;
+  }
+  #top-nav-logo-label{
+    padding-top:8px;
+    font-size:40px;    
+  }
+
+  
+  #reductions-container{
+      padding-bottom:50px;
+      margin: 0 auto;
+      width:85vw;
+  }
+
+  .reduction-item-infos{
+      margin-left:20vw;
+  }
+
+  
+  .reduction-item-image{
+      width:calc(20vw + 12px);
+  }
+  .reduction-item-discount-container{
+    height:28px;
+  }
+  .reduction-item-discount{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left:10px;
+    padding-right:10px;
+    height: 24px;
+    text-align:center;
+  }
+  .reduction-item-infos{
+    padding-left:15px;
+    padding-right:15px;
+  }
+}
+
+#filters-container{
+      display:flex;
+      gap:10px;
+}
+
+#background{
+  padding-top:150px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:162px;
+}
+
+
+#main-container{
+  padding-top:20px;
+  background-color: #eee;
+  box-shadow: inset 0px 10px 10px -10px rgb(200, 200, 200);
+}
+
+p{
+  text-align: justify;
+}
+
+body{
+  font-family: Loma;
+  padding:0;
+  margin:0;
+  background-color: #eeeeee;
+}
+
+#top-nav{
+  position: sticky;
+  background-color:white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom: 2px solid #dddddd;
+}
+
+#top-nav-header-container-i{
+  display: flex;
+  justify-content: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-decoration:none;
+}
+
+
+#top-nav-logo-container{
+  flex:3;
+}
+#top-nav-logo{
+  display:block;
+}
+#top-nav-logo-label{
+  flex:11;
+  font-weight:800;
+  display:inline;
+  color: black;
+  
+}
+
+.reduction-item-footer{
+  font-size:14px;
+  color:#333333;
+  padding-bottom:5px;
+  display:flex;
+}
+
+.reduction-meta-footer-container{
+  display:inline;
+  margin-right:15px;
+}
+
+.reduction-meta-footer-image-container{
+  display:inline;
+  width:14px;
+  height:14px;
+}
+
+.reduction-meta-footer-image{
+  display:inline;
+  width:14px;
+  height:14px;
+}
+
+
+
+
+a:link{
+  text-decoration:none;
+}
+
+
+
+
+
+
+
+.reduction-item-discount-container{
+  margin-left:10px;
+  width:fit-content;
+  background-color:#3faf46;
+  color: white;
+  transform: skew(-20deg);
+  display:inline-block;
+}
+
+.reduction-item-discount{
+  padding-left:10px;
+  padding-right:10px;
+  transform: skew(20deg);
+  text-align:center;
+  font-size:17px;
+  font-weight:700;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Loma';
+    src: url('../assets/fonts/Loma.eot');
+    src: url('../assets/fonts/Loma.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Loma.woff2') format('woff2'),
+        url('../assets/fonts/Loma.woff') format('woff'),
+        url('../assets/fonts/Loma.ttf') format('truetype'),
+        url('../assets/fonts/Loma.svg#Loma') format('svg');
+}

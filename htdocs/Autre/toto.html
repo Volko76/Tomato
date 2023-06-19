@@ -1,0 +1,56 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="player"></div>
+    <button onclick="pausePlay()">Pause/Play</button>
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+      var toggle=true;
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '390',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          playerVars: {
+            'playsinline': 1
+          },
+          events: {
+            'onReady': onPlayerReady
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+      function pausePlay(event){
+        if(toggle==true){
+            console.log(toggle);
+            player.pauseVideo();
+            toogle = false;
+            console.log(toggle);
+        }else{
+            console.log(toggle);
+            player.playVideo();
+            toogle = true;
+        }
+      }
+    </script>
+  </body>
+</html>

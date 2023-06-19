@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube Sync</title>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div id="player"></div>
+  <button id="toggleButton">Pause/Play</button>
+
+  <script>
+    // YouTube API
+    let player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '390',
+        width: '640',
+        videoId: 'mGqvH0xSiYw',
+        events: {
+          'onReady': onPlayerReady,
+        },
+      });
+    }
+
+    function onPlayerReady(event) {
+      event.target.playVideo();
+    }
+
+    // Socket.IO
+    const socket = io();
+    socket.on('toggleVideo', (data) => {
+      if (data.action === 'pause') {
+        player.pauseVideo();
+      } else if (data.action === 'play') {
+        player.playVideo();
+      }
+    });
+
+    // jQuery
+    $(document).ready(function() {
+      $('#toggleButton').click(function() {
+        if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+          socket.emit('toggleVideo', { action: 'pause' });
+        } else {
+          socket.emit('toggleVideo', { action: 'play' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

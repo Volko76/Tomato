@@ -1,0 +1,173 @@
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-appearance: initial;
+   }
+   
+   
+   @media all and (min-width: 640px){
+  
+    #top-nav-logo{
+      height:100px;
+      width:100px;
+    }
+    #top-nav-logo-label{
+      padding-top:10px;
+      font-size:50px;    
+    }
+  
+    #top-nav-header-container{
+      display:flex;
+      height:100px;
+    }
+  
+    #top-nav{
+      height: 94px;
+    }
+  
+    #page-container{
+        padding-bottom:50px;
+        margin: 0 auto;
+        width:544px;
+    }
+  }
+  @media all and (min-width: 0px) and (max-width: 640px) {
+  
+    #top-nav{
+      height: 74px;
+    }
+  
+    #top-nav-logo{
+      height:80px;
+      width:80px;
+    }
+  
+    #top-nav-header-container{
+      display:flex;
+      height:80px;
+    }
+    #top-nav-logo-label{
+      padding-top:8px;
+      font-size:40px;    
+    }
+  
+    #page-container{
+        padding-bottom:50px;
+        margin: 0 auto;
+        width:85vw;
+    }
+  }
+
+  h1{
+    padding-bottom:5px;
+    padding-top:5px;
+  }
+  
+  
+  body{
+    font-family: Loma;
+    padding:0;
+    margin:0;
+    background-color: #eeeeee;
+  }
+  
+  #top-nav{
+    position: sticky;
+    background-color:white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 2px solid #dddddd;
+  }
+  
+  #top-nav-header-container-i{
+    display: flex;
+    justify-content: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration:none;
+  }
+  
+  
+  #top-nav-logo-container{
+    flex:3;
+  }
+  #top-nav-logo{
+    display:block;
+  }
+  #top-nav-logo-label{
+    flex:11;
+    font-weight:800;
+    display:inline;
+    color: black;
+    
+  }
+  
+  .button{
+    font-weight:800;
+    padding:10px;
+    padding-left:40px;
+    padding-right:40px;
+    border-radius:10px;
+    margin-top: 20px;
+    text-align:center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-decoration:none;
+    transition:0.1s;
+    cursor: pointer;
+  }
+  
+  
+  #annonces-viewer-button{
+    background-color: #029f1a;
+    color: white;
+    flex:2;
+  }
+  
+  #annonces-viewer-button:hover {
+    background-color: #029418;
+  }
+  
+  #stores-button{
+    border:1px solid rgb(0, 179, 255);
+    color:rgb(0, 179, 255);
+    flex:1;
+  }
+  
+  #stores-button:hover{
+    border: 1px solid rgb(0, 152, 218);
+    color:rgb(0, 152, 218);
+  }
+  
+  #buttons-container{
+    display:flex;
+    width:100%;
+    gap:10px;
+  }
+  
+  
+  
+  a:link{
+    text-decoration:none;
+  }
+  
+  
+  
+  @font-face {
+      font-family: 'Loma';
+      src: url('../assets/fonts/Loma.eot');
+      src: url('../assets/fonts/Loma.eot?#iefix') format('embedded-opentype'),
+          url('../assets/fonts/Loma.woff2') format('woff2'),
+          url('../assets/fonts/Loma.woff') format('woff'),
+          url('../assets/fonts/Loma.ttf') format('truetype'),
+          url('../assets/fonts/Loma.svg#Loma') format('svg');
+  }
+  
+  
